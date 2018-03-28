@@ -16,7 +16,7 @@ class Database {
         let savedPosts = posts.length;
 
         try {
-            const collection = conn.collection(this.collectionName)
+            const collection = conn.db("rss-node-mongo").collection(this.collectionName)
 
             await collection.insertMany(posts, { ordered: false });
             return savedPosts;
@@ -35,6 +35,4 @@ class Database {
     }
 }
 
-
 module.exports = Database;
-
