@@ -11,7 +11,7 @@
   "dependencies": {
     "feedparser": "^2.2.1",
     "html-entities": "^1.2.1",
-    "mongodb": "2.2.30",
+    "mongodb": "^3.0.0",
     "request": "latest"
   },
   "engines": {
